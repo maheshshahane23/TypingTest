@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypingTest - Test Your Typing Speed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>TypingTest</h1>
+        <div class="settings">
+            <select id="duration">
+                <option value="30">30 seconds</option>
+                <option value="60">1 minute</option>
+                <option value="300">5 minutes</option>
+                <option value="600">10 minutes</option>
+                <option value="6900">115 minutes</option>
+            </select>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="start-test">Start TypingTest</button>
+        </div>
+        <div id="timer">00:00</div>
+        <div class="typing-box">
+            <div id="input-area" contenteditable="true" spellcheck="false"></div>
+            <div id="text-display"></div>
+        </div>
+        <button id="restart-test" class="hidden">Restart TypingTest</button>
+    </div>
+    <div id="result-popup" class="hidden">
+        <div class="result-content">
+            <h2>TypingTest Results</h2>
+            <p id="wpm-result"></p>
+            <p id="greeting-message"></p>
+            <p id="encouraging-message"></p>
+            <img id="result-gif" src="" alt="Result GIF"><br>
+            <button id="restart-button">Restart TypingTest</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
